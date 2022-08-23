@@ -1,0 +1,9 @@
+QString username = ui->lineEdit->text();
+    QString password = ui->lineEdit_2->text();
+
+    if(username == "admin" && password == "admin") {
+      QMessageBox::information(this, "Login", "Username & Password is correct");
+    }
+        else {
+        QMessageBox::warning(this, "Login", "Username & Password is not correct");
+    }
